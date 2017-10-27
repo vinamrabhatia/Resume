@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Vinamra}{Bhatia}{ } \\
+\href{mailto:vinamrabhatia8@gmail.com}{vinamrabhatia8@gmail.com} | 8308814380 | f2015090@goa.bits-pilani.ac.in
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection {\href{http://www.bits-pilani.ac.in/}{\custombold{BITS PILANI}} } 
+\descript{BE(Hons) Computer Science}
+\location{Expected Aug 2019 \\ CGPA: 8.41}
+\sectionsep
+
+\subsection{PMS Public School}
+\location{Class XII, May 2015|  Moradabad, India}
+\descript{CBSE - 96.8\%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/vinamrabhatia}{\custombold{vinamrabhatia}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/vinamrabhatia/}{\custombold{vinamrabhatia/}} \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{UnderGraduate}
+Computer Architecture (In-progress) \\
+Machine Learning (In-progress) \\
+Operating Systems (In-progress) \\
+Theory of Computation (In-progress) \\
+Machine Learning (In-progress) \\
+Network Programming (In-progress) \\
+Data Structures and Algorithms \\
+Microprocessors and Interfacing \\
+Digital Design \\
+Logic in Computer Science \\
+Discrete Structures \\
+Object Oriented Programming \\
+Database Management Systems \\
+Computer Programming \\
+\sectionsep
+
+\subsection{MOOCS}
+Android Development \\
+Usable Security \\
+Cryptography \\
+Development of Real Time Systems \\
+Intro to Information Security \\
+MetaSpoilt Unleashed \\
+\sectionsep
+
+\subsection{WORKSHOPS}
+\href{http://www.bits-pilani.ac.in/}{\custombold{NetTech}} (stood 3rd among 150+) \\
+Robocon Workshop \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} Lua \\
+Java \textbullet{} JavaScript \textbullet{} SQL \textbullet{} Android \\ 
+\section{Interests}
+Penetration Testing \textbullet{} CyberSecurity \textbullet{} Computer Networks \textbullet{} Software Development
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection {\href{https://summerofcode.withgoogle.com/organizations/5824514215641088/6087291645722624/}{Google Summer of Code 2017}}
+\descript{| {NMAP Network Scanner (Exploitation and Vulnerability Specialist) mentored by \href{http://calderonpale.com/}{\custombold{Paulino Calderon}}}}
+\location{May 2017 - August 2017}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and contributed to vulnerability scripts for NSE (NMAP Scripting Engine) which includes JSONP endpoint detection, SMBLoris detection, TR069 vulnerability, WordPress Content Injection Vulnerabilities
+\item Worked on implementing a dedicated cookies library.
+\item Added detection of several web-services, fixed some bugs in nmap repository.
+\end{tightemize}
+\sectionsep
+
+\runsubsection {\href{http://hyperloopindia.in/}{SpaceX Hyperloop Pod Competition}}
+\descript{| Software Engineer }
+\location{Oct 2016 – Sept 2017 }
+\begin{tightemize}
+\item Worked on freeRTOS to develop software for a Prototype Hyperloop Pod and took the pod to SpaceX, Hawthrone, California during SpaceX Competition Weekend 2 (Aug 20 - Aug 26 '17) as part of Hyperloop India.
+\item The team was among the top 24 teams from the world and the only team from India to have qualified for the same.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{i-Loads}
+\descript{| Summer Intern }
+\location{May 2017 – July 2017 }
+\begin{tightemize}
+\item Worked on making a Python Input-Output Master GUI.
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\vspace{1mm}
+\begin{tightemize}
+
+\item Identification of Devanagari Manuscript : Optical Character Recognization of Devanagari Manuscript using OpenCV, numpy, matplotlib and scikit-learn. Sept 2017 - Present under Prof Ashwin Shrinivasan, BITS Goa
+
+\item Synergy : Building a plugin based notification synchronization system for Android
+and Linux devices. Sept 2017 - Present under Prof Mahadev Gawas.
+
+\item \href{https://github.com/AutolabJS/AutolabJS}{Autolab Project} : An auto-grader system for evaluating labs. Worked on proper implementations of CA, Keys and Certificate and improved TLS implementation for the Autolab Project. (Jan 2017 - May 2017) under Prof Prasad Talasila, BITS Goa.
+
+\item \href{https://ctftime.org/event/417}{BITSCTF} : Organized an international CTF(Capture the Flag) with the team(BITSkrieg). The hacking competition got great reviews and witnessed participation from over 500 international teams. (Jan 2017 - Feb 2017)
+
+\item \href{https://play.google.com/store/apps/details?id=bits.mobileappclub.waves2016&hl=en}{Waves 2016 Mobile App} : Part of the team to build the Official Android App for one of the biggest cultural fest in the country. (Sept 2016 - Nov 2016)
+
+\item Voizzle : Contributed in a voice based word puzzle game which used Google Speech API to detect words and highlight them in CrossWord. (Jan 2016 - Feb 2016)
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2017 		 & Google Summer of Code (around 1.2k students globally) \\
+2016 		 & Google CTF 168th rank(global)\\
+2015 		 & JEE Mains Rank 3015 among 15 lakh candidates\\
+2013  		 & CBSE Proficiency Test 99.7 percentile\\
+2011	     & \href{https://en.wikipedia.org/wiki/National_Talent_Search_Examination}{NTSE (National Talent Search Examination) Scholar}\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Position of Responsibilty}
+
+\begin{tabular}{rll}
+2017-18  & Coordinator, BITSkrieg (Official Club for Ethical Hacking and Penetration Testing)\\
+2016-17  & Core Member, Mobile App Club, BITS Goa\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
